@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^create$ buat.php [NC,L]
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^draf$ draf.php [NC,L]
+RewriteRule ^pub/([a-zA-Z0-9]+)$ pub.php?pub=$1 [NC,L]
+RewriteRule ^draf/([a-zA-Z0-9]+)$ daf.php?daf=$1 [NC,L]
+RewriteRule ^ubah/([a-zA-Z0-9]+)$ ubah.php?ub=$1 [NC,L]
+RewriteRule ^hapus/([a-zA-Z0-9]+)$ hapus.php?hapus=$1 [NC,L]

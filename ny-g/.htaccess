@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ posts.php?uid=$1&url=$2 [NC,L]
+RewriteRule ^sitemap\.xml/?$ sitemap.php [NC,L]
